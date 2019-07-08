@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/preview_of_image_before_enlarging"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/lepakshi" />
+
+            <TextView
+                android:id="@+id/preview_of_name_of_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preview_of_image_before_enlarging"
+                android:layout_margin="5dp"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="Lepakshi" />
+
+            <TextView
+                android:id="@+id/preview_of_place_of_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preview_of_name_of_spot"
+                android:layout_margin="4dp"
+                android:textColor="#000"
+                android:textSize="23sp"
+                tools:text="Anantapuram" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
